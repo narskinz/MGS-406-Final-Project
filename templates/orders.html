@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Ordering App</title>
+</head>
+<body>
+    <h1>Orders</h1>
+    {% for order in orders %}
+        <p>{{ order.food_item }} - Quantity: {{ order.quantity }}</p>
+    {% endfor %}
+    <p><a href="/order">Place another order</a></p>
+</body>
+</html>
